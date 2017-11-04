@@ -4,8 +4,7 @@ Get youself a **account at [spDYN](https://www.spdyn.de/)** or similar provider.
 
 This **images target the ARM architecture**, uses the well known [ddclient](https://www.strongswan.org/) library and is based on [alpine Linux](http://www.alpinelinux.org/), and thus leads to a **slimmer image**.
 
-[![Build Status](https://travis-ci.org/netzfisch/rpi-dyndns.svg?branch=master)](https://travis-ci.org/netzfisch/rpi-dyndns)
-[![](https://images.microbadger.com/badges/version/netzfisch/rpi-dyndns.svg)](https://microbadger.com/images/netzfisch/rpi-dyndns "Inspect image") [![](https://images.microbadger.com/badges/image/netzfisch/rpi-dyndns.svg)](https://microbadger.com/images/netzfisch/rpi-dyndns "Inspect image")
+[![Build Status](https://travis-ci.org/protenhan/rpi-dyndns.svg?branch=master)](https://travis-ci.org/netzfisch/rpi-dyndns)
 
 Find the source code at [GitHub](https://github.com/netzfisch/rpi-dyndns) or the ready-to-run image in the [DockerHub](https://hub.docker.com/r/netzfisch/rpi-dyndns/) and **do not forget to _star_** the repository ;-)
 
