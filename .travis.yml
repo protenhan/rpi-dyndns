@@ -15,8 +15,8 @@ after_success:
   if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
     TAG=$(grep "FROM " Dockerfile | sed 's/.*://')
-    docker tag protenhan/rpi-ddclient:build netzfisch/rpi-dyndns:$TAG
-    docker tag protenhan/rpi-ddclient:build netzfisch/rpi-dyndns:latest
+    docker tag protenhan/rpi-ddclient:build protenhan/rpi-ddclient:$TAG
+    docker tag protenhan/rpi-ddclient:build protenhan/rpi-ddclient:latest
     docker push protenhan/rpi-ddclient:$TAG
     docker push protenhan/rpi-ddclient:latest
   fi
