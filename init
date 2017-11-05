@@ -4,7 +4,10 @@
 # exit at failure with '1'!
 set -e
 
-UPDATE_TOKEN=`cat /run/secrets/ddclient.password`
+if [ -f /run/secrets/ddclient.password ]
+then
+    UPDATE_TOKEN=`cat /run/secrets/ddclient.password`
+fi
 
 # replace credentials when starting container first time
 if [ ! -f /.initialized ]; then
